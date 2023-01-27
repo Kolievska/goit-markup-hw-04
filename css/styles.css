@@ -254,15 +254,14 @@ img {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  justify-content: center;
+  align-items: center;
   background-color: #f5f4fa;
 }
 
 .features-icon {
   width: 70px;
+  height: 70px;
 }
 
 .features-list-item {
@@ -324,10 +323,10 @@ img {
 }
 
 .team-text {
-  margin-top: 30px;
-  margin-bottom: 16px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-top: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 30px;
 }
 
 .team-name {
@@ -339,6 +338,7 @@ img {
 }
 
 .team-position {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -347,9 +347,6 @@ img {
 .team-links-list {
   display: flex;
   gap: 10px;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 30px;
 }
 
 .team-list-item {
@@ -433,32 +430,34 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+/* Card */
+
 .portfolio-set {
   display: flex;
   flex-wrap: wrap;
   gap: var(--portfolio-set-gap);
 }
 
-.portfolio-set > .item {
+.portfolio-item {
   flex-basis: calc((100% - 60px) / 3);
 }
 
-.portfolio-set > .item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.portfolio-set > .item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-/* Card */
-
-.portfolio-set a {
+.portfolio-set-card {
+  display: block;
   color: var(--primary-color);
   text-decoration: none;
 }
+
+.portfolio-set-card:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-set-card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 
 .card-thumb img {
   max-width: 100%;
@@ -493,15 +492,13 @@ img {
 
 footer {
   background-color: #2f303a;
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 
 .footer-box {
   display: flex;
-}
-
-.footer-address {
-  padding-top: 60px;
+  align-items: baseline;
 }
 
 .logo-footer {
@@ -539,7 +536,6 @@ footer {
 
 .footer-social-links {
   margin-left: 70px;
-  padding-top: 72px;
 }
 
 .footer-social-links h3 {
